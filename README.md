@@ -79,10 +79,10 @@ Then open 👉 http://localhost:4200
 
 Here is the recreated design output:
 
-
+<img width="1917" height="891" alt="Screenshot 2025-09-14 191007" src="https://github.com/user-attachments/assets/34cfd531-8d75-4da1-a093-3dbe64efc462" />
 
 ✅ Submission Notes
 
 Built as per given requirements (Angular + HTML + TypeScript + Tailwind).
 
-Includes screenshot of final UI in assets/final-output.png.
+Includes screenshot of final UI 
