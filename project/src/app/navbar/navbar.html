@@ -1,0 +1,52 @@
+<nav class="bg-white border-b px-6 py-4 flex items-center justify-between">
+<!-- Left: big greeting + subtitle -->
+<div class="flex flex-col">
+  <div class="text-2xl md:text-3xl font-semibold text-gray-800">Good Morning, Sajibur</div>
+  <div class="text-sm text-gray-500 mt-1 max-w-2xl">
+    Set up a new project by adding essential information to begin tracking and managing tasks effectively.
+  </div>
+</div>
+
+<!-- Right: search, theme, notifications, avatar -->
+<div class="flex items-center space-x-3">
+  <!-- Search -->
+  <div class="relative hidden sm:block">
+    <input
+      type="search"
+      placeholder="Search..."
+      class="pl-10 pr-4 py-1 rounded-full border bg-gray-50 text-sm w-64 focus:outline-none focus:ring-2 focus:ring-blue-300"
+    />
+    <!-- magnifier icon -->
+    <svg class="w-4 h-4 text-gray-400 absolute left-3 top-2.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="11" cy="11" r="6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <!-- theme toggle (sun) -->
+  <button (click)="toggleTheme()" aria-label="Toggle theme" class="p-2 rounded-full hover:bg-gray-100">
+    <svg class="w-5 h-5 text-gray-600" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/>
+      <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <!-- notifications -->
+  <button aria-label="Notifications" class="relative p-2 rounded-full hover:bg-gray-100">
+    <svg class="w-5 h-5 text-gray-600" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6 6 0 10-12 0v3.159c0 .538-.214 1.055-.595 1.436L4 17h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M13.73 21a2 2 0 01-3.46 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    
+
+    @if (notifications) {
+      <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full px-1.5 leading-4">
+        {{ notifications > 9 ? '9+' : notifications }}
+      </span>
+    }
+    
+  </button>
+
+  
+</div>
+</nav>
