@@ -61,7 +61,7 @@ src/
 
 🚀 Getting Started
 1️⃣ Clone the repo
-git clone https://github.com/your-username/angular-dashboard.git
+git clone https://github.com/saurabh-006/Task-Angular.git
 cd angular-dashboard
 
 2️⃣ Install dependencies
